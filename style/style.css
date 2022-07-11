@@ -716,7 +716,7 @@ footer {
 
 .pricing {
     margin-top: 50px;
-    background: url('/image/pricing.png');
+    background: url('../image/pricing.png');
     height: 798px;
     width: 100vw;
     background-size: cover;
@@ -803,7 +803,7 @@ footer {
 /* PLAN */
 
 .plan {
-    background: url('/image/planBackground.png');
+    background: url('../image/planBackground.png');
     height: 800px;
     background-size: cover;
 }
@@ -858,7 +858,7 @@ footer {
 /* BOOKING */
 
 .bookingHeader {
-	background: url('/image/bookingHeader.png');
+	background: url('../image/bookingHeader.png');
 	height: 515px;
 	background-size: cover;
 	position: relative;
