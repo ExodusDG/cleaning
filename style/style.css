@@ -117,7 +117,9 @@ body {
     transition: 0.3s;
     border: 2px solid #007EB1;
 }
-
+.navbarMobile {
+    display: none;
+}
 .blueButton svg {
     width: unset;
     margin-right: 10px;
@@ -183,13 +185,18 @@ body {
 .headerImage {
     width: 100%;
     position: relative;
-    top: 60px;
+    top: 100px;
 }
 
 .headerImage img {
     width: 100%;
 }
-
+.headerBottom {
+    display: none;
+}
+.headerMbBubble {
+    display: none;
+}
 .headerBody {
     position: absolute;
     top: 300px;
@@ -356,7 +363,7 @@ a {
 
 .featured {
     margin-top: 100px;
-    background: url('/image/featuredBackground.png');
+    background: url('../image/featuredBackground.png');
     width: 100vw;
     height: 810px;
 }
@@ -530,7 +537,7 @@ a {
 footer {
     height: 600px;
     margin-top: 100px;
-    background: url('/image/Union.svg');
+    background: url('../image/Union.svg');
     width: 100vw;
     background-size: cover;
     padding-top: 150px;
@@ -1075,6 +1082,9 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    .navbarMobile {
+        display: block;
+    } 
     .headerBody {
         top: 200px;
     }
@@ -1107,7 +1117,7 @@ footer {
     }
 
     .headerImage {
-        background: url('/image/headerMb.png');
+        background: url('../image/headerMb.png');
         height: 700px;
         background-size: 100%;
     }
@@ -1199,7 +1209,12 @@ footer {
     .headerBottom {
         position: relative;
     }
-
+    .headerBottom {
+        display: block;
+    }
+    .headerMbBubble {
+        display: block;
+    }
     .headerMbBubble {
         position: relative;
         height: 400px;
@@ -1484,7 +1499,9 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
     }
-
+.navbarMobileBlock a > img {
+    width: 80%;
+}
     .headerBodyLeft {
         margin-top: 278px;
     }
