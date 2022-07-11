@@ -117,9 +117,11 @@ body {
     transition: 0.3s;
     border: 2px solid #007EB1;
 }
+
 .navbarMobile {
     display: none;
 }
+
 .blueButton svg {
     width: unset;
     margin-right: 10px;
@@ -191,12 +193,15 @@ body {
 .headerImage img {
     width: 100%;
 }
+
 .headerBottom {
     display: none;
 }
+
 .headerMbBubble {
     display: none;
 }
+
 .headerBody {
     position: absolute;
     top: 300px;
@@ -853,13 +858,13 @@ footer {
 /* BOOKING */
 
 .bookingHeader {
-    background: url('/image/bookingHeader.png');
-    height: 395px;
-    background-size: cover;
-    position: relative;
-    margin-top: 110px;
-    padding-top: 100px;
-    box-sizing: border-box;
+	background: url('/image/bookingHeader.png');
+	height: 515px;
+	background-size: cover;
+	position: relative;
+	margin-top: 0px;
+	padding-top: 197px;
+	box-sizing: border-box;
 }
 
 .bookingHeader button {
@@ -1084,7 +1089,8 @@ footer {
 @media (max-width: 1024px) {
     .navbarMobile {
         display: block;
-    } 
+    }
+
     .headerBody {
         top: 200px;
     }
@@ -1209,12 +1215,15 @@ footer {
     .headerBottom {
         position: relative;
     }
+
     .headerBottom {
         display: block;
     }
+
     .headerMbBubble {
         display: block;
     }
+
     .headerMbBubble {
         position: relative;
         height: 400px;
@@ -1380,6 +1389,75 @@ footer {
     .footerContact {
         margin-top: 20px;
     }
+
+    .pricingHeaderSection {
+        height: 600px;
+    }
+
+    .pricingBlock {
+        width: 90%;
+    }
+
+    .pricingHeaderSection .navbarMobileBlock {
+        background: transparent;
+    }
+
+    .pricingHeaderTitle {
+        color: #007EB1;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .bookingHeader {
+        height: 500px;
+    }
+    .bookingHeader {
+        margin-top: 0px;
+    }
+    .bookingHeader {
+        padding-top: 50px;
+    }
+    .bookingHeader {
+        padding-top: 0px;
+    }
+    .bookingHeader {
+        height: 550px;
+        background-position: center;
+    }
+    .bookingItem {
+        display: block;
+    }
+    .bookingContainer {
+        margin-top: 125px;
+    }
+    
+    .bookingItem input {
+        width: 100%;
+    }
+    .bookingPlaceholder {
+        margin-top: 20px;
+    }
+    #adress {
+        width: 100%;
+    }
+    #city {
+        width: 100%;
+    }
+    #state {
+        width: 100%;
+    }
+    #feet {
+        width: 100%;
+    }
+    #date, #time {
+        width: 100%;
+    }
+    .bookingItemsButton {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+    .bookingItemAddons {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1419,9 +1497,43 @@ footer {
     .faqItemVisible p {
         text-align: left;
     }
+
+    .pricingHeaderSection {
+        height: 600px;
+    }
+
+    .pricingBlock {
+        height: auto;
+    }
+
+    .pricingPrice {
+        display: block;
+    }
+
+    .pricingCenter {
+        display: none;
+    }
+
+    .pricing {
+        height: auto;
+        width: 100vw;
+        padding-bottom: 100px;
+    }
+    .planBlock {
+        width: 90%;
+    }
+    .pricingFooter {
+        margin-top: 0;
+    }
+    .bookingHeader {
+        height: 500px;
+    }
 }
 
 @media (max-width: 600px) {
+    .bookingHeader {
+        height: 500px;
+    }
     .headerImage {
         height: 650px;
         background-size: 100%;
@@ -1491,6 +1603,34 @@ footer {
     .footerEmail {
         width: 100%;
     }
+    .pricingHeaderTitle {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .pricingHeaderSubtitle {
+        font-size: 34px;
+    }
+    .pricingHeaderSection {
+        height: 600px;
+    }
+    .pricing {
+        background-position: center;
+    }
+    .planBlock {
+        height: auto;
+    }
+    .pricingHeaderTitle {
+        font-size: 40px;
+    }
+    .bookingHeader {
+        height: 500px;
+    }
+    .bookingItemsButton {
+        width: 32%;
+    }
+    
 }
 
 @media (max-width: 490px) {
@@ -1499,9 +1639,11 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
     }
-.navbarMobileBlock a > img {
-    width: 80%;
-}
+
+    .navbarMobileBlock a>img {
+        width: 80%;
+    }
+
     .headerBodyLeft {
         margin-top: 278px;
     }
@@ -1615,7 +1757,75 @@ footer {
         margin: 0 auto;
         margin-top: 10px;
     }
+
     .featuredItem {
         height: 141px;
+    }
+    .pricingHeaderSection {
+        height: 500px;
+    }
+    .pricingHeader {
+        padding-top: 170px;
+        text-align: center;
+    }
+    .pricingItem p {
+        font-size: 20px;
+    }
+    .pricingItem .pricingText {
+        font-size: 20px;
+    }
+    .pricingBlock {
+       border-radius: 10px;
+    }
+    .plan {
+        height: auto;
+        padding-bottom: 100px;
+    }
+    .planBlock {
+        top: 45px;
+    }
+    .planItem > div img {
+       display: none;
+    }
+    .planItem > div p {
+        font-size: 20px;
+    }
+    .planItem > p {
+        font-size: 20px;
+    }
+    .pricing {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .pricingHeaderSubtitle {
+        font-size: 24px;
+    }
+    .pricingHeaderTitle {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .pricingLeft, .pricingRight {
+        min-width: 100%;
+    }
+    .pricingBlock {
+        padding: 65px;
+    }
+    .pricingItem {
+        margin-bottom: 0px;
+    }
+    .planBlock {
+        padding: 30px;
+    }
+    .bookingHeader {
+        height: 450px;
+    }
+    .bookingItemsButton {
+        font-size: 16px;
+    }
+    .bookingHeader {
+        height: 282px;
+    }
+    .bookingHeader {
+        height: 485px;
     }
 }
