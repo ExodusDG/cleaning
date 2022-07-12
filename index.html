@@ -470,8 +470,35 @@
         </div>
     </footer>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+        var fired = false;
+
+        window.addEventListener('scroll', () => {
+            if (fired === false) {
+                fired = true;
+
+                setTimeout(function () {
+                    var headID = document.getElementsByTagName("head")[0];
+
+                    var jquery = document.createElement('script');
+                    jquery.type = 'text/javascript';
+                    jquery.src = 'js/jquery-3.6.0.min.js';
+                    headID.appendChild(jquery);
+
+
+                    setTimeout(() => {
+                        var main = document.createElement('script');
+                        main.type = 'text/javascript';
+                        main.src = 'js/main.js';
+                        main.defer = 'true';
+                        headID.appendChild(main);
+                    }, 500);
+
+
+                }, 500);
+            }
+        });
+    </script>
 </body>
 
 </html>
