@@ -1000,8 +1000,9 @@ footer {
 }
 
 .bookingItemsButtonActive {
-    color: #4F4B4B;
-    background: #EDEDED;
+    color: white;
+    background: #007EB1;
+    border: 1px solid #007EB1;
 }
 
 #card {
